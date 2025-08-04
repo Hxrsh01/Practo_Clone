@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar start */
+.navname img {
+    height: 25px;
+    width: 116px;
+}
+
+.navleft {
+    margin-left: 32px;
+}
+
+.navleft a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+}
+
+.navleft a:hover {
+    color: blue;
+    border-bottom: 4px solid blue;
+}
+
+
+.navright {
+    margin-left: 240px;
+}
+
+.navright a {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.dropdown {
+    display: inline-flex;
+    margin-right: 2px;
+}
+
+.dropdownitem a:hover {
+    background-color: rgb(234, 231, 231);
+}
+
+.logintab {
+    margin-left: 15px;
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    background-color: transparent;
+}
+
+.logintab:hover {
+    color:
+        rgb(135, 206, 235);
+    border-color:
+        rgb(135, 206, 235);
+}
+
+/* navbar end */
+
+
+/* consult now start */
+.consult {
+    background-color: rgb(240, 230, 231);
+    height: 75vh;
+}
+
+.btn {
+    height: 50px;
+    width: 172px;
+}
+.consult-img{
+       position: relative;
+    top: 133px;
+    height: 305px;
+
+}
+.card{
+    height: 300px;
+    width: 300px;
+}
+/* consult now end */
