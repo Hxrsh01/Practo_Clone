@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Lato", sans-serif;
 }
 
 /* navbar start */
@@ -49,7 +50,8 @@
     font-size: 13px;
     padding: 8px 10px;
     border-radius: 4px;
-    border: 1px solid gray;
+    color: gray;
+    border: 0.5px solid gray;
     background-color: transparent;
 }
 
@@ -69,18 +71,67 @@
     height: 75vh;
 }
 
+.seeall {
+    right: 6%;
+    top: 16%;
+}
+
 .btn {
+    background-color: rgb(16, 144, 195);
+
     height: 50px;
     width: 172px;
 }
-.consult-img{
-       position: relative;
-    top: 133px;
-    height: 305px;
 
+.onlinedetail img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    object-fit: cover;
+    margin-left: -10px;
 }
-.card{
+
+.consultimg img {
+    object-fit: cover;
+    bottom: 0;
+    height: 65%;
+    width: 50%;
+}
+
+.pulse {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 10px;
+    border-radius: 50%;
+    animation: pulse 1.2s infinite;
+    background-color: #aae000;
+    margin-left: 6px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(170, 224, 0, 0.6);
+    }
+
+    70% {
+        transform: scale(1.5);
+        box-shadow: 0 0 0 10px rgba(170, 224, 0, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(170, 224, 0, 0);
+    }
+}
+
+/* consult now end */
+
+/* Specialities start*/
+.card {
     height: 300px;
     width: 300px;
 }
-/* consult now end */
+
+/* Specialities end*/
