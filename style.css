@@ -28,7 +28,8 @@
 
 
 .navright {
-    margin-left: 240px;
+    position: absolute;
+    right: 4%;
 }
 
 .navright a {
@@ -62,25 +63,39 @@
         rgb(135, 206, 235);
 }
 
+@media only screen and (min-width:800px) and (max-width:1110px) {
+    .navleft {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:801px) {
+    .afternav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:801px) {
+    .navright {
+        display: flex;
+    }
+}
+
 /* navbar end */
 
 
 /* consult now start */
 .consult {
     background-color: rgb(240, 230, 231);
-    height: 75vh;
-}
-
-.seeall {
-    right: 6%;
-    top: 16%;
+    position: relative;
+    height: fit-content;
 }
 
 .btn {
-    background-color: rgb(16, 144, 195);
-
     height: 50px;
     width: 172px;
+    cursor: pointer;
+
 }
 
 .onlinedetail img {
@@ -92,7 +107,7 @@
 }
 
 .consultimg img {
-    object-fit: cover;
+    position: absolute;
     bottom: 0;
     height: 65%;
     width: 50%;
@@ -106,7 +121,6 @@
     border-radius: 50%;
     animation: pulse 1.2s infinite;
     background-color: #aae000;
-    margin-left: 6px;
 }
 
 @keyframes pulse {
@@ -115,7 +129,7 @@
         box-shadow: 0 0 0 0 rgba(170, 224, 0, 0.6);
     }
 
-    70% {
+    50% {
         transform: scale(1.5);
         box-shadow: 0 0 0 10px rgba(170, 224, 0, 0);
     }
@@ -129,9 +143,158 @@
 /* consult now end */
 
 /* Specialities start*/
+.btnLeft {
+    position: absolute;
+    color: grey;
+    border: 1px solid grey;
+    top: 120px;
+    border-radius: 50%;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    left: -16px;
+}
+
+.btnRight {
+    position: absolute;
+    color: grey;
+    border: 1px solid grey;
+    top: 120px;
+    border-radius: 50%;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    right: -7px;
+}
+
 .card {
-    height: 300px;
-    width: 300px;
+    flex: 0 0 auto;
+    height: 270px;
+    width: 180px;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.seeall1 {
+    right: 6%;
+    top: 16%;
+}
+
+
+.specialcontainer {
+    display: flex;
+    overflow-x: hidden;
+    gap: 1rem;
+    scrollbar-width: none;
+}
+
+@media only screen and (max-width:992px) {
+    .specialcontainer {
+        overflow-x: auto;
+    }
 }
 
 /* Specialities end*/
+
+
+/* common start */
+.seeall2 {
+    right: 5%;
+    top: 7%;
+}
+
+.commonspecialcontainer {
+    display: flex;
+    overflow-x: hidden;
+    gap: 3rem;
+    scrollbar-width: none;
+}
+
+@media only screen and (max-width:992px) {
+    .commonspecialcontainer {
+        overflow-x: auto;
+    }
+}
+
+.commoncard {
+    flex: 0 0 auto;
+    width: 260px;
+    border-radius: 5px;
+    height: 290px;
+    padding: auto;
+}
+
+.commoncard img {
+    object-fit: cover;
+    height: 182px;
+    width: 285px;
+    border-radius: 5px;
+}
+
+/* common END */
+
+/* offer start */
+.Offercardleft {
+    background-color: #96D3BF;
+    height: 32vh;
+    width: 50%;
+    border: 1px solid;
+}
+
+.Offercardleft img {
+    bottom: 0;
+    height: 50%;
+    right: 0;
+}
+
+.Offercardleft span {
+    color: #2E6F5A;
+}
+
+.Offercardright {
+    background-color: #FEBA7F;
+    height: 32vh;
+    width: 50%;
+    border: 1px solid;
+}
+
+.Offercardright span {
+    color: #B05201;
+
+}
+
+.Offercardright img {
+    bottom: 0;
+    height: 50%;
+    right: 0;
+}
+
+/* offer end */
+
+/* ourdoctor start */
+.ourdoctorcontainer{
+    gap: 1rem;
+    overflow-x: hidden;
+}
+.ourdoctorcard {
+    flex: 0 0 auto;
+    height: 17vh;
+    width: 22.5vw;
+}
+
+.ourdoctorcard img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50%;
+    top: 20px
+}
+
+.ourdoctordetails p {
+    font-size: small;
+    padding: 0;
+    margin: 0;
+}
+
+/* ourdoctor end */
