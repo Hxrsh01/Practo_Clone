@@ -423,14 +423,16 @@
 
     <!-- ourdoctor start -->
     <h2 class="fw-bold px-5">Our Doctors</h2>
-    <section class="ourdoctorcontainer px-5 d-flex scrollBox">
+    <section class="ourdoctorcontainer px-5 d-flex" id="scrollTool">
         <div class="position-relative">
-            <button class="border rounded-circle"><i class="fa-solid fa-caret-left"></i></button>
-            <button class="border rounded-circle"><i class="fa-solid fa-caret-right"></i></button>
+            <button id="goleft" class="position-absolute border bg-info rounded-circle"><i
+                    class="fa-solid fa-caret-left"></i></button>
+            <button id="goright" class="position-absolute border rounded-circle"><i
+                    class="fa-solid fa-caret-right"></i></button>
         </div>
-        <div class="ourdoctorcard border rounded mt-3 d-flex position-relative">
+        <div class="ourdoctorcard border rounded mt-3 d-flex">
             <div class="col-lg-3">
-                <img class="position-absolute"
+                <img class=""
                     src="https://www.practostatic.com/images1-fabric/doctor/1065882/dr-rupal-agarwal-6482d3f1919c9.jpg"
                     alt="">
             </div>
@@ -441,9 +443,9 @@
                 <p>15488 consult none</p>
             </div>
         </div>
-        <div class="ourdoctorcard border rounded mt-3 d-flex position-relative">
+        <div class="ourdoctorcard border rounded mt-3 d-flex">
             <div class="col-lg-3">
-                <img class="position-absolute"
+                <img class=""
                     src="https://www.practostatic.com/images1-fabric/doctor/753465/dr-anshuman-gupta-67a6d729ac235.jpg"
                     alt="">
             </div>
@@ -454,9 +456,9 @@
                 <p>6642 consult none</p>
             </div>
         </div>
-        <div class="ourdoctorcard border rounded mt-3 d-flex position-relative">
+        <div class="ourdoctorcard border rounded mt-3 d-flex">
             <div class="col-lg-3">
-                <img class="position-absolute"
+                <img class=""
                     src="https://www.practostatic.com/images1-fabric/doctor/589655/dr-hitesh-viradiya-610d46ab0cf9b.jpg"
                     alt="">
             </div>
@@ -467,9 +469,9 @@
                 <p>58032 consult none</p>
             </div>
         </div>
-        <div class="ourdoctorcard border rounded mt-3 d-flex position-relative">
+        <div class="ourdoctorcard border rounded mt-3 d-flex">
             <div class="col-lg-3">
-                <img class="position-absolute"
+                <img class=""
                     src="https://www.practostatic.com/images1-fabric/doctor/953743/dr-murali-reddy-61079374694e8.jpg"
                     alt="">
             </div>
@@ -480,9 +482,9 @@
                 <p>67286 consult none</p>
             </div>
         </div>
-        <div class="ourdoctorcard border rounded mt-3 d-flex position-relative">
+        <div class="ourdoctorcard border rounded mt-3 d-flex">
             <div class="col-lg-3">
-                <img class="position-absolute"
+                <img class=""
                     src="https://www.practostatic.com/images1-fabric/doctor/1060960/dr-amandeep-676e53f8839c4.jpg"
                     alt="">
             </div>
@@ -493,9 +495,9 @@
                 <p>22217 consult none</p>
             </div>
         </div>
-        <div class="ourdoctorcard border rounded mt-3 d-flex position-relative">
+        <div class="ourdoctorcard border rounded mt-3 d-flex">
             <div class="col-lg-3">
-                <img class="position-absolute"
+                <img class=""
                     src="https://www.practostatic.com/images1-fabric/doctor/932422/dr-bilal-ahmad-bhat-6796eb036adcd.jpg"
                     alt="">
             </div>
@@ -506,9 +508,9 @@
                 <p>36390 consult none</p>
             </div>
         </div>
-        <div class="ourdoctorcard border rounded mt-3 d-flex position-relative">
+        <div class="ourdoctorcard border rounded mt-3 d-flex">
             <div class="col-lg-3">
-                <img class="position-absolute"
+                <img class=""
                     src="https://www.practostatic.com/images1-fabric/doctor/647391/dr-kamal-kishore-verma-5d69f93f40699.jpg"
                     alt="">
             </div>
@@ -519,9 +521,9 @@
                 <p>67286 consult none</p>
             </div>
         </div>
-        <div class="ourdoctorcard border rounded mt-3 d-flex position-relative">
+        <div class="ourdoctorcard border rounded mt-3 d-flex">
             <div class="col-lg-3">
-                <img class="position-absolute"
+                <img class=""
                     src="https://www.practostatic.com/images1-fabric/doctor/1142669/dr-ashima-ahuja-66824bd13ca05.png"
                     alt="">
             </div>
@@ -534,6 +536,41 @@
         </div>
     </section>
     <!-- ourdoctor end -->
+
+    <!-- woking start -->
+    <div class=" d-flex flex-column align-items-center pt-5">
+        <h2>How it works</h2>
+        <div class="wokingsymbol">
+            <div class="leftsymbol  text-center">
+                <div class="symbol">
+                    <i class="fa-solid fa-arrow-pointer"></i>
+                </div>
+                <div class="content">
+                    <p>Select a speciality or symptom</p>
+                </div>
+            </div>
+            <div class="connectline"></div>
+            <div class="middlesymbol  text-center">
+                <div class="symbol">
+                    <i class="fa-solid fa-message"></i>
+                </div>
+                <div class="content">
+                    <p>Audio/ video call with a verified doctor</p>
+                </div>
+            </div>
+            <div class="connectline"></div>
+
+            <div class="rightsymbol  text-center">
+                <div class="symbol"> 
+                    <i class="fa-solid fa-prescription"></i>
+                </div>
+                <div class="content">
+                    <p>Get a digital prescription & a free follow-up</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- woking end -->
     <script src="script.js"></script>
 </body>
 
